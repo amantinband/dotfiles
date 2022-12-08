@@ -1,0 +1,5 @@
+.config/nvim/undo
+.config/nvim/plugin/packer_compiled.lua
+.config/iterm2
+.config/htop
+.config/github-copilot
