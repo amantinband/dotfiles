@@ -32,8 +32,11 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
-		"csharpier",
-		"stylua", -- lua formatter
+		"stylua", -- lua
+		"csharpier", -- csharp
+		"clang-format", -- c, c++, objc, csharp..
+		"markdownlint", -- markdown
+		"prettier", -- html, css, json
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

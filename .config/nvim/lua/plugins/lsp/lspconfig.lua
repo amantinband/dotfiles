@@ -46,7 +46,12 @@ end
 lspconfig["omnisharp"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	filetypes = { "cs", "csharp" },
+	enable_editorconfig_support = true,
+	enable_roslyn_analyzers = true,
+	organize_imports_on_format = true,
+	enable_import_completion = true,
+	analyze_open_documents_only = false,
+	filetypes = { "cs", "vb" },
 })
 
 -- configure lua server (with special settings)

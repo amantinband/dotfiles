@@ -1,0 +1,67 @@
+let mapleader = ","
+
+set nu
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set relativenumber
+set ic
+set nowrap
+set list listchars=tab:\ \ 
+set foldmethod=syntax
+set foldlevel=99
+set hlsearch
+set re=1
+set ttyfast
+set lazyredraw
+
+" jump 10 lines up and down with ctrl-k and ctrl-j
+nnoremap <C-k> 10k
+nnoremap <C-j> 10j
+" jump between buffers with ) and (
+nnoremap ) :bn<CR>
+nnoremap ( :bp<CR>
+" delete buffer with D
+nnoremap D :bd<CR>
+" add empty line below with #
+nnoremap # o<ESC>k
+" mark all words under cursor without moving with gm
+nnoremap gm *N
+" to search and replace recursively word under the cursor in all files press 'gr', edit word before /g and press enter
+nnoremap gr yiw:! git grep -lz <C-r>" \| xargs -0 sed -i '' -e 's/<C-r>"/<C-r>"/g'
+nnoremap gp :<C-r>"
+" remove highlighted words with space
+nnoremap <Space> :noh<CR>
+" close window with X
+nnoremap X :q<CR>
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-Right> <C-w>l
+map <C-Left> <C-w>h
+map <C-Down> <C-w>j
+map <C-Up> <C-w>k
+
+function! NumberToggle()
+    if(&rnu == 1)
+        set nornu
+    else
+        set rnu
+    endif
+endfunc
+
+inoremap jj <ESC>:set rnu<CR>
+nnoremap i :set nornu<CR>i
+nnoremap co :call ToggleColors()<CR>
+
+map <Home> :call ToggleHome()<CR>
+
+" use ctrl-/ to comment/uncomment
+map gig :Gitgrep 
+" map gis to git grep -in word under cursor
+map gis yiw:Gitgrep <C-r>"<CR>
+
+" map gip to git grep -in word under cursor and open in new buffer
+map gip :sp<CR>yiw:Gitgrep <C-r>"<CR>
+nnoremap gt :! ctags -R . &<CR><CR>

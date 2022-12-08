@@ -44,4 +44,7 @@ nvimtree.setup({
 		dotfiles = true,
 		custom = { "obj", "bin" },
 	},
+	view = {
+		relativenumber = true,
+	},
 })
