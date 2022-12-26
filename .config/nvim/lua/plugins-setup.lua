@@ -36,6 +36,8 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors")
 	use("Mofiqul/vscode.nvim")
 
+	use("christoomey/vim-tmux-navigator") -- navigate between tmux panes and vim splits
+
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins

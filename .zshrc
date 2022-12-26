@@ -118,10 +118,19 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export PATH=/Users/administrator/.local/bin:$PATH
 
-alias vim=nvim
+alias X=exit
 alias ls="colorls --sd"
 alias ll="colorls -al --sd"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME' # dotfiles
+
+if [ -x "$(command -v nvim)" ]; then
+    alias vim=nvim
+fi
+
+if [ -x "$(command -v lsd)" ]; then
+    alias ls="lsd"
+    alias la="lsd --all --long"
+fi
 
 autoload -Uz compinit
 compinit
