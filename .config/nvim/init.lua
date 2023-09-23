@@ -16,6 +16,5 @@ require("plugins.autopairs")
 require("plugins.copilot")
 
 require("plugins.lsp.mason")
-require("plugins.lsp.lspsaga")
 require("plugins.lsp.lspconfig")
 require("plugins.lsp.null-ls")

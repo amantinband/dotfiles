@@ -162,3 +162,6 @@ compdef _dotnet_zsh_complete dotnet
 # zsh vim mode keymaps
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
 bindkey ^R history-incremental-search-backward 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /Users/amantinband/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
