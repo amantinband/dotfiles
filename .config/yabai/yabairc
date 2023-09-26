@@ -28,5 +28,7 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Elgato.*$" manage=off
+yabai -m rule --add app="^Karabiner.*$" manage=off
 
 yabai -m signal --add event=space_changed action="yabai -m window --focus first"

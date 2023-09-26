@@ -64,17 +64,18 @@ ctrl + shift - 5 : yabai -m window --space 5; yabai -m display --focus $(yabai -
 ctrl + shift - 6 : yabai -m window --space 6; yabai -m display --focus $(yabai -m query --spaces --space 6 | jq .display); yabai -m space --focus 6
 ctrl + shift - 7 : yabai -m window --space 7; yabai -m display --focus $(yabai -m query --spaces --space 7 | jq .display); yabai -m space --focus 7
 ctrl + shift - 8 : yabai -m window --space 8; yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 8
+ctrl + shift - 9 : yabai -m window --space 9; yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 9
 
 # move focus to space #
-ctrl + cmd - 1 : yabai -m display --focus $(yabai -m query --spaces --space 1 | jq .display); yabai -m space --focus 1
-ctrl + cmd - 2 : yabai -m display --focus $(yabai -m query --spaces --space 2 | jq .display); yabai -m space --focus 2
-ctrl + cmd - 3 : yabai -m display --focus $(yabai -m query --spaces --space 3 | jq .display); yabai -m space --focus 3
-ctrl + cmd - 4 : yabai -m display --focus $(yabai -m query --spaces --space 4 | jq .display); yabai -m space --focus 4
-ctrl + cmd - 5 : yabai -m display --focus $(yabai -m query --spaces --space 5 | jq .display); yabai -m space --focus 5
-ctrl + cmd - 6 : yabai -m display --focus $(yabai -m query --spaces --space 6 | jq .display); yabai -m space --focus 6
-ctrl + cmd - 7 : yabai -m display --focus $(yabai -m query --spaces --space 7 | jq .display); yabai -m space --focus 7
-ctrl + cmd - 8 : yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 8
-ctrl + cmd - 9 : yabai -m display --focus $(yabai -m query --spaces --space 9 | jq .display); yabai -m space --focus 9
+hyper - 1 : osascript -e 'tell application "System Events" to key code 18 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 1 | jq .display); yabai -m space --focus 1
+hyper - 2 : osascript -e 'tell application "System Events" to key code 19 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 2 | jq .display); yabai -m space --focus 2
+hyper - 3 : osascript -e 'tell application "System Events" to key code 20 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 3 | jq .display); yabai -m space --focus 3
+hyper - 4 : osascript -e 'tell application "System Events" to key code 21 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 4 | jq .display); yabai -m space --focus 4
+hyper - 5 : osascript -e 'tell application "System Events" to key code 23 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 5 | jq .display); yabai -m space --focus 5
+hyper - 6 : osascript -e 'tell application "System Events" to key code 22 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 6 | jq .display); yabai -m space --focus 6
+hyper - 7 : osascript -e 'tell application "System Events" to key code 26 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 7 | jq .display); yabai -m space --focus 7
+hyper - 8 : osascript -e 'tell application "System Events" to key code 28 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 8
+hyper - 9 : osascript -e 'tell application "System Events" to key code 25 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 9 | jq .display); yabai -m space --focus 9
 
 # -- Starting/Stopping/Restarting Yabai --
 
