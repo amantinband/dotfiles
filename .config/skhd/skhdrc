@@ -64,7 +64,7 @@ ctrl + shift - 5 : yabai -m window --space 5; yabai -m display --focus $(yabai -
 ctrl + shift - 6 : yabai -m window --space 6; yabai -m display --focus $(yabai -m query --spaces --space 6 | jq .display); yabai -m space --focus 6
 ctrl + shift - 7 : yabai -m window --space 7; yabai -m display --focus $(yabai -m query --spaces --space 7 | jq .display); yabai -m space --focus 7
 ctrl + shift - 8 : yabai -m window --space 8; yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 8
-ctrl + shift - 9 : yabai -m window --space 9; yabai -m display --focus $(yabai -m query --spaces --space 8 | jq .display); yabai -m space --focus 9
+ctrl + shift - 9 : yabai -m window --space 9; yabai -m display --focus $(yabai -m query --spaces --space 9 | jq .display); yabai -m space --focus 9
 
 # move focus to space #
 hyper - 1 : osascript -e 'tell application "System Events" to key code 18 using control down'; yabai -m display --focus $(yabai -m query --spaces --space 1 | jq .display); yabai -m space --focus 1
@@ -82,4 +82,7 @@ hyper - 9 : osascript -e 'tell application "System Events" to key code 25 using 
 # stop/start/restart yabai
 ctrl + fn - q : yabai --stop-service
 ctrl + fn - s : yabai --start-service
-ctrl + fn - r : yabai --restart-service
+ctrl + fn - r : yabai --restart-service && skhd --restart-service
+
+# make window sticky
+hyper - s : yabai -m window --toggle sticky

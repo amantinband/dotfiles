@@ -19,6 +19,9 @@ yabai -m config mouse_action1 move
 # set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
+# Make the focused window float and sticky
+yabai -m config --space mouse action1 mod2
+yabai -m rule --add app=".*" space=mouse action1="yabai -m window --toggle float; yabai -m window --toggle sticky"
 
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap

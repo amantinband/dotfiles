@@ -3,10 +3,10 @@
         "EnableDecompilationSupport": true,
         "EnableAnalyzersSupport": true,
         "LocationPaths": [
-            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.1/roslyn/common",
-            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.1/roslyn/analyzers",
-            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.1/roslyn/refactorings",
-            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.1/roslyn/fixes"
+            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.4/roslyn/common",
+            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.4/roslyn/analyzers",
+            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.4/roslyn/refactorings",
+            "/Users/amantinband/.vscode/extensions/josefpihrt-vscode.roslynator-4.6.4/roslyn/fixes"
         ]
     }
 }
