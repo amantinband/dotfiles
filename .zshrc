@@ -170,3 +170,22 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/.torusrc
 
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/amantinband/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+alias mywing=~/github/wing/apps/wing/bin/wing
+
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+       cd -P -- "$1"
+}
