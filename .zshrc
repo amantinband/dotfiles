@@ -189,3 +189,5 @@ mkcdir ()
     mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
+
+eval "$(zoxide init zsh --cmd cd)"
