@@ -1,5 +1,3 @@
-
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -167,6 +165,8 @@ bindkey ^R history-incremental-search-backward
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /Users/amantinband/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+source <(fzf --zsh)
+
 
 source ~/.torusrc
 
@@ -191,3 +191,7 @@ mkcdir ()
 }
 
 eval "$(zoxide init zsh --cmd cd)"
+
+export LC_CTYPE=C 
+export LANG=C
+
